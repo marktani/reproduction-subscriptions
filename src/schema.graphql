@@ -1,0 +1,9 @@
+# import Post, PostSubscriptionPayload from "./generated/graphcool.graphql"
+
+type Query {
+  feed: [Post!]!
+}
+
+type Subscription {
+  publications: PostSubscriptionPayload
+}
